@@ -52,7 +52,9 @@ def gpt_route():
     # then count everything
     counted_items = {}
 
-    for item in items:
+    for __item in items:
+        _item = __item.replace("[", "")
+        item = _item.replace("]", "")
         if item not in counted_items:
             counted_items[item] = 0
         counted_items[item] += 1
