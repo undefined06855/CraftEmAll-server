@@ -20,7 +20,7 @@ def askGPT(string) -> str:
                 "content": string
             }
         ],
-        "gpt-3.5-turbo3"
+        "gpt-4o"
     )
 
     return response.choices[0].message.content
